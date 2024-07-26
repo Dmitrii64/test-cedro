@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body,
+main {
+  font-size: 16px;
+  line-height: calc(24/16);
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #21242E;
+  position: relative;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: #21242E;
+  transition: color 0.4s;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 80px;
+  }
+}
+
+.title {
+  margin: 32px 0;
+  font-size: 35px;
+  line-height: calc(40/35);
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: 1024px) {
+    font-size: 80px;
+    line-height: 1;
+    margin: 112px 0 80px;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.swiper {
+  overflow: visible;
+}
+
+path {
+  transition: stroke 0.4s, fill 0.4s;
+}
+
+@import "./header/header";
+@import "./input/input";
+@import "./button/button";
+@import "./product/product";
